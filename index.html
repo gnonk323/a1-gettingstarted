@@ -1,21 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>[Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
+    <nav>
+      <a href="index.html">index.html</a>
+      <a href="hobby.html">hobby.html</a>
+      <a href="https://www.wpi.edu/" target="_blank">WPI Home Page</a>
+      <a href="https://www.newschoolers.com/home" target="_blank"
+        >Newschoolers.com</a
+      >
+    </nav>
+    <h1 class="page-title">Gus Montana</h1>
+    <hr />
+    <p>Class of <span class="bold" id="year">2025</span></p>
+    <p>Computer Science Major, Data Science Minor</p>
+    <button id="go-button">Click me!</button>
+    <div id="star">⭐</div>
+    <script>
+      const button = document.getElementById("go-button");
+      const star = document.getElementById("star");
 
-      [Courses]
-
-      [Technologies]
-    
+      button.addEventListener("click", () => {
+        star.style.left = "100vw";
+        star.style.transform = "translateY(-50%) rotate(360deg)";
+        setTimeout(() => {
+          star.style.transition = "none";
+          star.style.left = "-100px";
+          star.offsetHeight;
+          star.style.transition = "transform 2s linear, left 2s linear";
+        }, 2000);
+      });
+    </script>
+    <h3>Courses I've taken:</h3>
+    <ul>
+      <li>CS 1101<span class="course">Introduction to Program Design</span></li>
+      <li>CS 2022<span class="course">Discrete Mathematics</span></li>
+      <li>
+        CS 2102<span class="course">Object-Oriented Design Concepts</span>
+      </li>
+      <li>CS 2223<span class="course">Algorithms</span></li>
+      <li>CS 2303<span class="course">Systems Programming Concepts</span></li>
+      <li>
+        CS 3043<span class="course"
+          >Social Implications of Information Processing</span
+        >
+      </li>
+      <li>
+        CS 3133<span class="course">Foundations of Computer Science</span>
+      </li>
+      <li>CS 3431<span class="course">Database Systems I</span></li>
+      <li>CS 3516<span class="course">Computer Networks</span></li>
+      <li>CS 3733<span class="course">Software Engineering</span></li>
+      <li>CS 4120<span class="course">Analysis of Algorithms</span></li>
+      <li>
+        CS 4341<span class="course"
+          >Introduction to Artificial Intelligence</span
+        >
+      </li>
+    </ul>
+    <h3>My experience:</h3>
+    <table>
+      <tr>
+        <th>Technology</th>
+        <th>Experience</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td class="alot">A lot</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td class="alot">A lot</td>
+      </tr>
+      <tr>
+        <td>Typescript</td>
+        <td class="alot">A lot</td>
+      </tr>
+      <tr>
+        <td>SQL</td>
+        <td class="alot">A lot</td>
+      </tr>
+      <tr>
+        <td>MongoDB</td>
+        <td class="some">Some</td>
+      </tr>
+      <tr>
+        <td>Web Frameworks</td>
+        <td class="alot">A lot (React, Next)</td>
+      </tr>
+      <tr>
+        <td>Unit Testing</td>
+        <td class="some">Some</td>
+      </tr>
+    </table>
   </body>
 </html>
