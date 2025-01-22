@@ -1,1 +1,171 @@
+h1 {
+    font-family: "Silkscreen", serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
 
+.page-title {
+    margin: 0;
+    margin-bottom: 1rem;
+    color: #124DFF;
+}
+
+.question-title {
+    font-family: "Silkscreen", serif;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+label {
+    font-family: "Silkscreen", serif;
+    font-weight: 400;
+}
+
+input[type=text] {
+    font-family: "Silkscreen", serif;
+    /* font-weight: 200; */
+    width: 45%;
+    padding: 0.5rem;
+}
+
+textarea {
+    font-family: "Silkscreen", serif;
+    width: 75%;
+    padding: 0.5rem;
+}
+
+select {
+    font-family: "Silkscreen", serif;
+    padding: 0.5rem;
+}
+
+nav {
+    display: flex;
+    padding: 0.5rem 0 0.5rem 0;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Silkscreen", serif;
+    font-weight: 400;
+    transition: all 0.2s;
+    border: black 2px solid;
+    padding: 0.25rem 0.5rem;
+}
+
+nav a:hover {
+    color: #FFBC12;
+    background-color: #FF1262;
+    transform: translateY(-3px);
+}
+
+p, li {
+    font-family: "Silkscreen", serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin: 0;
+    margin-bottom: 0.25rem;
+    transition: all 0.2s;
+}
+
+.course {
+    opacity: 0;
+    user-select: none;
+    color: #FFBC12;
+    transition: opacity 0.25s;
+    margin-left: 0.5rem;
+}
+
+li:hover .course {
+    opacity: 1;
+}
+
+h3 {
+    font-family: "Silkscreen", serif;
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+th, td {
+    text-align: left;
+    padding: 0.5rem;
+    font-family: "Silkscreen", serif;
+}
+
+td {
+    border-top: gray 1px solid;
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+}
+
+td.alot {
+    color: #2bd23b;
+}
+
+td.some {
+    color: #FF1262;
+}
+
+button[type=submit] {
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    font-family: "Silkscreen", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #2bd23b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+button[type=submit]:hover {
+    background-color: #24bd33;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    font-family: "Silkscreen", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #FF1262;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+button:hover {
+    background-color: #f54781;
+}
+
+.num {
+    color:#FFBC12;
+}
+
+#star {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+    font-size: 90px;
+    color: gold;
+    transition: transform 2s linear, left 2s linear;
+}
+
+#go-button:hover {
+    transform: rotate(9deg);
+}
