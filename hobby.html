@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hobby Form</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">index.html</a>
+      <a href="hobby.html">hobby.html</a>
+      <a href="https://www.wpi.edu/" target="_blank">WPI Home Page</a>
+      <a href="https://www.newschoolers.com/home" target="_blank"
+        >Newschoolers.com</a
+      >
+    </nav>
+    <header>
+      <h1 class="page-title">Hobby Form</h1>
+    </header>
+    <hr />
+    <main>
+      <form action="">
+        <div>
+          <label for="q1" class="question-title"
+            ><span class="num">1. </span>What's your name?</label
+          >
+          <input type="text" id="q1" name="q1" />
+        </div>
+        <br />
+        <div>
+          <label for="q4" class="question-title"
+            ><span class="num">2. </span>Have you ever been skiing or
+            snowboarding?</label
+          >
+          <select name="q4" id="q4">
+            <option value="skiing">Skiing</option>
+            <option value="snowboarding">Snowboarding</option>
+            <option value="both">Both</option>
+            <option value="neither">Neither</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="q2" class="question-title"
+            ><span class="num">3. </span>What mountains have you been to?</label
+          >
+          <textarea name="q2" id="q2"></textarea>
+        </div>
+        <br />
+        <label for="q3" class="question-title"
+          ><span class="num">4. </span>How often do you ski/snowboard?</label
+        >
+        <div>
+          <input type="radio" id="q3-1" name="q3" value="Weekly" />
+          <label for="q3-1">Weekly</label>
+          <br />
+          <input type="radio" id="q3-2" name="q3" value="Monthly" />
+          <label for="q3-2">Monthly</label>
+          <br />
+          <input type="radio" id="q3-3" name="q3" value="Annually" />
+          <label for="q3-3">Annually</label>
+          <br />
+          <input type="radio" id="q3-4" name="q3" value="Occasionally" />
+          <label for="q3-4">Occasionally</label>
+          <br />
+          <input type="radio" id="q3-4" name="q3" value="Never" />
+          <label for="q3-4">Never</label>
+        </div>
+        <br />
+        <label for="q5" class="question-title"
+          ><span class="num">5. </span>Which types of terrain do you
+          enjoy?</label
+        >
+        <div>
+          <input type="checkbox" id="q5-1" name="q5" value="Groomed trails" />
+          <label for="q5-1">Groomed trails</label>
+          <br />
+          <input type="checkbox" id="q5-2" name="q5" value="Powder" />
+          <label for="q5-2">Powder</label>
+          <br />
+          <input type="checkbox" id="q5-3" name="q5" value="Terrain parks" />
+          <label for="q5-3">Terrain parks</label>
+          <br />
+          <input type="checkbox" id="q5-4" name="q5" value="Moguls" />
+          <label for="q5-4">Moguls</label>
+          <br />
+          <input type="checkbox" id="q5-4" name="q5" value="Backcountry" />
+          <label for="q5-4">Backcountry</label>
+        </div>
+        <br />
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
